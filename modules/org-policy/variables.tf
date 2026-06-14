@@ -1,3 +1,3 @@
-variable "org_id" {
+variable "organization_id" {
   type = string
 }
