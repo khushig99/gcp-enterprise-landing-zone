@@ -38,3 +38,12 @@ module "iam" {
     ]
   }
 }
+
+module "logging" {
+
+  source = "../../modules/logging"
+
+  organization_id = local.org_id
+
+  project_id = "lz-logging"
+}
