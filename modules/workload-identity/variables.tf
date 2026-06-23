@@ -1,4 +1,4 @@
-variable "project_id" {
+variable "terraform_sa_email" {
   type = string
 }
 
