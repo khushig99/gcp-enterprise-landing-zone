@@ -19,7 +19,7 @@ module "workload_identity" {
 
   terraform_sa_email = module.terraform_sa.email
 
-  github_repository  = ""khushig99/gcp-enterprise-landing-zone"
+  github_repository  = "khushig99/gcp-enterprise-landing-zone"
 }
 
 resource "google_organization_iam_member" "terraform_folder_admin" {
