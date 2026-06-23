@@ -14,7 +14,6 @@ module "iam" {
   organization_id = local.org_id
 
   bindings = {
-
     "roles/viewer" = [
       "group:auditors@example.com"
     ]
@@ -30,10 +29,9 @@ module "iam" {
 }
 
 module "logging" {
-
   source = "../../modules/logging"
 
   organization_id = local.org_id
 
-  project_id = "lz-logging"
+  project_id = "khushi-lz-logging"
 }
