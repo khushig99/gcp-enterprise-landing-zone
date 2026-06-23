@@ -16,7 +16,7 @@ module "terraform_sa" {
 
 resource "google_organization_iam_member" "terraform_folder_admin" {
 
-  org_id = local.org_id
+  org_id = 423969081969
 
   role = "roles/resourcemanager.folderAdmin"
 
