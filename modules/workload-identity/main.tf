@@ -1,4 +1,4 @@
-resource "google_iam_workload_identity_pool" "github" {
+resource "google_iam_workload_identity_pool" "github" {b0f)$ cat ~/gcp-enterprise-landing-zone/modules/workload-identity/main.tf
   workload_identity_pool_id = "github-pool"
   display_name              = "GitHub Actions Pool"
 }
@@ -11,7 +11,6 @@ resource "google_iam_workload_identity_pool_provider" "github" {
 
   attribute_mapping = {
     "google.subject"       = "assertion.sub"
-    "attribute.actor"      = "assertion.actor"
     "attribute.repository" = "assertion.repository"
   }
 
