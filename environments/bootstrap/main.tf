@@ -1,7 +1,3 @@
-provider "google" {
-  project = "project-fce939dd-3922-4178-b0f"
-}
-
 module "state_bucket" {
 
   source = "../../modules/state-bucket"
