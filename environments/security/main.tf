@@ -8,10 +8,6 @@ module "org_policy" {
   organization_id = local.org_id
 }
 
-locals {
-  org_id = "543675347962"
-}
-
 module "iam" {
   source = "../../modules/iam"
 
