@@ -12,12 +12,6 @@ locals {
   org_id = "543675347962"
 }
 
-module "org_policy" {
-  source = "../../modules/org-policy"
-
-  organization_id = local.org_id
-}
-
 module "iam" {
   source = "../../modules/iam"
 
