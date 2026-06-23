@@ -15,15 +15,15 @@ module "iam" {
 
   bindings = {
     "roles/viewer" = [
-      "group:auditors@example.com"
+      "user:khushig080803@gmail.com"
     ]
 
     "roles/compute.networkAdmin" = [
-      "group:network-admins@example.com"
+      "user:khushig080803@gmail.com"
     ]
 
     "roles/resourcemanager.folderAdmin" = [
-      "group:platform-admins@example.com"
+      "user:khushig080803@gmail.com"
     ]
   }
 }
