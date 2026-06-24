@@ -43,7 +43,7 @@ module "logging_project" {
 module "dev_project" {
   source = "../../modules/project"
 
-  name            = "Dev"
+  name            = "Development"
   project_id      = local.projects.dev
   folder_id       = module.nonprod_folder.folder_id
   billing_account = var.billing_account
@@ -52,7 +52,7 @@ module "dev_project" {
 module "qa_project" {
   source = "../../modules/project"
 
-  name            = "QA"
+  name            = "QualityAssurance"
   project_id      = local.projects.qa
   folder_id       = module.nonprod_folder.folder_id
   billing_account = var.billing_account
