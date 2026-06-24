@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 resource "google_iam_workload_identity_pool" "github" {b0f)$ cat ~/gcp-enterprise-landing-zone/modules/workload-identity/main.tf
+=======
+resource "google_iam_workload_identity_pool" "github" {
+>>>>>>> 94848f4 (Complete bootstrap environment)
   workload_identity_pool_id = "github-pool"
   display_name              = "GitHub Actions Pool"
 }

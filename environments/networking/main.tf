@@ -5,7 +5,7 @@ locals {
 module "network" {
   source = "../../modules/network"
 
-  project_id  = local.host_project_id
+  project_id   = local.host_project_id
   network_name = "enterprise-vpc"
 
   subnets = [
@@ -53,11 +53,11 @@ module "shared_vpc" {
 module "cloud_nat" {
   source = "../../modules/cloud-nat"
 
-  project_id   = local.host_project_id
-  region       = "asia-south1"
+  project_id = local.host_project_id
+  region     = "asia-south1"
 
   network_name = module.network.network_name
 
-  router_name  = "enterprise-router"
-  nat_name     = "enterprise-nat"
+  router_name = "enterprise-router"
+  nat_name    = "enterprise-nat"
 }

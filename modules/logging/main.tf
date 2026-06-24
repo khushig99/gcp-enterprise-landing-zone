@@ -1,12 +1,12 @@
 resource "google_logging_project_bucket_config" "central_logs" {
 
-  project        = var.project_id
+  project = var.project_id
 
-  location       = "global"
+  location = "global"
 
   retention_days = 365
 
-  bucket_id      = "central-log-bucket"
+  bucket_id = "central-log-bucket"
 }
 
 resource "google_logging_organization_sink" "org_sink" {

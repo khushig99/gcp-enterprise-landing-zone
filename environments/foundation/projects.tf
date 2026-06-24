@@ -4,12 +4,12 @@ locals {
     logging    = "khushi-lz-logging"
     security   = "khushi-lz-security"
 
-    dev        = "khushi-lz-dev"
-    qa         = "khushi-lz-qa"
-    sandbox    = "khushi-lz-sandbox"
+    dev     = "khushi-lz-dev"
+    qa      = "khushi-lz-qa"
+    sandbox = "khushi-lz-sandbox"
 
-    prod_app   = "khushi-lz-prod-app"
-    prod_data  = "khushi-lz-prod-data"
+    prod_app  = "khushi-lz-prod-app"
+    prod_data = "khushi-lz-prod-data"
   }
 }
 

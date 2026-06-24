@@ -18,7 +18,7 @@ resource "google_org_policy_policy" "allowed_locations" {
 
 resource "google_org_policy_policy" "disable_external_ip" {
 
-  name   = "organizations/${var.organization_id}/policies/compute.vmExternalIpAccess"
+  name = "organizations/${var.organization_id}/policies/compute.vmExternalIpAccess"
 
   parent = "organizations/${var.organization_id}"
 
@@ -32,7 +32,7 @@ resource "google_org_policy_policy" "disable_external_ip" {
 
 resource "google_org_policy_policy" "disable_sa_keys" {
 
-  name   = "organizations/${var.organization_id}/policies/iam.disableServiceAccountKeyCreation"
+  name = "organizations/${var.organization_id}/policies/iam.disableServiceAccountKeyCreation"
 
   parent = "organizations/${var.organization_id}"
 
@@ -46,7 +46,7 @@ resource "google_org_policy_policy" "disable_sa_keys" {
 
 resource "google_org_policy_policy" "require_os_login" {
 
-  name   = "organizations/${var.organization_id}/policies/compute.requireOsLogin"
+  name = "organizations/${var.organization_id}/policies/compute.requireOsLogin"
 
   parent = "organizations/${var.organization_id}"
 
